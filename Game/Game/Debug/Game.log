@@ -1,0 +1,21 @@
+﻿  Main.cpp
+  CGAME.cpp
+  Generating Code...
+CGAME.obj : error LNK2019: unresolved external symbol "public: __thiscall CPEOPLE::CPEOPLE(void)" (??0CPEOPLE@@QAE@XZ) referenced in function "public: __thiscall CGAME::CGAME(void)" (??0CGAME@@QAE@XZ)
+Main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall CPEOPLE::isImpact(class CVEHICLE *)" (?isImpact@CPEOPLE@@QAE_NPAVCVEHICLE@@@Z) referenced in function "void __cdecl ThreadFunc(void)" (?ThreadFunc@@YAXXZ)
+Main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall CPEOPLE::isImpact(class CANIMAL *)" (?isImpact@CPEOPLE@@QAE_NPAVCANIMAL@@@Z) referenced in function "void __cdecl ThreadFunc(void)" (?ThreadFunc@@YAXXZ)
+Main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall CPEOPLE::isFinish(void)" (?isFinish@CPEOPLE@@QAE_NXZ) referenced in function "void __cdecl ThreadFunc(void)" (?ThreadFunc@@YAXXZ)
+Main.obj : error LNK2019: unresolved external symbol "public: bool __thiscall CPEOPLE::isDead(void)" (?isDead@CPEOPLE@@QAE_NXZ) referenced in function "void __cdecl ThreadFunc(void)" (?ThreadFunc@@YAXXZ)
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall CGAME::drawGame(void)" (?drawGame@CGAME@@QAEXXZ) referenced in function "void __cdecl ThreadFunc(void)" (?ThreadFunc@@YAXXZ)
+Main.obj : error LNK2019: unresolved external symbol "public: __thiscall CGAME::~CGAME(void)" (??1CGAME@@QAE@XZ) referenced in function "void __cdecl `dynamic atexit destructor for 'cg''(void)" (??__Fcg@@YAXXZ)
+Main.obj : error LNK2019: unresolved external symbol "public: class CPEOPLE __thiscall CGAME::getPeople(void)" (?getPeople@CGAME@@QAE?AVCPEOPLE@@XZ) referenced in function "void __cdecl ThreadFunc(void)" (?ThreadFunc@@YAXXZ)
+Main.obj : error LNK2019: unresolved external symbol "public: class CVEHICLE * __thiscall CGAME::getVehicle(void)" (?getVehicle@CGAME@@QAEPAVCVEHICLE@@XZ) referenced in function "void __cdecl ThreadFunc(void)" (?ThreadFunc@@YAXXZ)
+Main.obj : error LNK2019: unresolved external symbol "public: class CANIMAL * __thiscall CGAME::getAnimal(void)" (?getAnimal@CGAME@@QAEPAVCANIMAL@@XZ) referenced in function "void __cdecl ThreadFunc(void)" (?ThreadFunc@@YAXXZ)
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall CGAME::exitGame(void *)" (?exitGame@CGAME@@QAEXPAX@Z) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall CGAME::startGame(void)" (?startGame@CGAME@@QAEXXZ) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall CGAME::pauseGame(void *)" (?pauseGame@CGAME@@QAEXPAX@Z) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall CGAME::resumeGame(void *)" (?resumeGame@CGAME@@QAEXPAX@Z) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall CGAME::updatePosPeople(char)" (?updatePosPeople@CGAME@@QAEXD@Z) referenced in function "void __cdecl ThreadFunc(void)" (?ThreadFunc@@YAXXZ)
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall CGAME::updatePosVehicle(void)" (?updatePosVehicle@CGAME@@QAEXXZ) referenced in function "void __cdecl ThreadFunc(void)" (?ThreadFunc@@YAXXZ)
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall CGAME::updatePosAnimal(void)" (?updatePosAnimal@CGAME@@QAEXXZ) referenced in function "void __cdecl ThreadFunc(void)" (?ThreadFunc@@YAXXZ)
+D:\Learning\Nam 2\Hoc ki 1\TH Lap trinh huong doi tuong\Game\Game\Debug\Game.exe : fatal error LNK1120: 17 unresolved externals
