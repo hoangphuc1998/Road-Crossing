@@ -1,8 +1,12 @@
 #pragma once
+#ifndef FUNCTION_H
+#define FUNCTION_H
+#endif // !FUNCTION_H
+
 #include <iostream>
 #include <time.h>
 using namespace std;
-int width = 70;
-int height = 15;
+const int width = 70;
+const int height = 15;
 void FixConsoleWindow();
 void GoToXY(int, int);
