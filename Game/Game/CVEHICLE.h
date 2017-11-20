@@ -1,14 +1,8 @@
 #pragma once
-#include "Function.h"
-class CVEHICLE {
-private:
-	int mX;
-	int mY;
-	bool mGoLeft;
-	char mSymbol;
-	int mLength = width / 2;;
+#include "COBJECT.h"
+class CVEHICLE :public COBJECT {
 public:
+	virtual ~CVEHICLE() {};
 	CVEHICLE(int,char);
-	void draw();
-	void Move(int,int);
+	void Tell();
 };

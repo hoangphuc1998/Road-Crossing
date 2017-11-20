@@ -1,4 +1,6 @@
 #pragma once
+#include <thread>
+#include <conio.h>
 #include <iostream>
 #include <vector>
 #include <Windows.h>
@@ -11,30 +13,26 @@ using namespace std;
 class CGAME {
 private:
 	int score =0;
-	vector<CTRUCK>ctr;
-	vector<CCAR> cca;
-	vector<CDINASAUR> cdi;
-	vector<CBIRD> cbi;
-	CPEOPLE cpe();
-	CANIMAL **rowAnimal;
-	CVEHICLE **rowVehicle;
+	CPEOPLE *cpe;
+	COBJECT **cob;
 public:
 	void drawBoard();
 	CGAME();
 	int getScore();
 	void drawGame();
-	~CGAME();
-	CPEOPLE getPeople();
-	CANIMAL* getAnimal(int);
-	CVEHICLE* getVehicle(int);
+	//~CGAME();
+	CPEOPLE* getPeople();
+	COBJECT* getObject(int);
 	void resetGame();
 	void exitGame(HANDLE);
 	void startGame();
-	void loadGame(istream);
-	void saveGame(istream);
+	bool loadGame(char*);
+	bool saveGame(char*);
 	void pauseGame(HANDLE);
 	void resumeGame(HANDLE);
 	void updatePosPeople(char);
-	void updatePosVehicle();
-	void updatePosAnimal();
+	void updatePosObject();
+	void increaseScore();
+	void updateWhenDie();
+	void DrawMenuWhenStart();
 };

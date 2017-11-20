@@ -1,0 +1,15 @@
+﻿  Main.cpp
+  Function.cpp
+  CVEHICLE.cpp
+  CTRUCK.cpp
+  CPEOPLE.cpp
+d:\learning\nam 2\hoc ki 1\th lap trinh huong doi tuong\game\game\game\cpeople.cpp(4): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  COBJECT.cpp
+  CGAME.cpp
+  CDINASAUR.cpp
+  CCAR.cpp
+  CBIRD.cpp
+  CANIMAL.cpp
+  Generating Code...
+  Game.vcxproj -> D:\Learning\Nam 2\Hoc ki 1\TH Lap trinh huong doi tuong\Game\Game\x64\Debug\Game.exe
+  Game.vcxproj -> D:\Learning\Nam 2\Hoc ki 1\TH Lap trinh huong doi tuong\Game\Game\x64\Debug\Game.pdb (Partial PDB)
