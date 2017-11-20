@@ -1,14 +1,6 @@
 #pragma once
-#include "Function.h"
-class CANIMAL {
-private:
-	int mX, mY;
-	bool mGoLeft;
-	char mSymbol;
-	int mLength = width/2;
+#include "COBJECT.h"
+class CANIMAL:public COBJECT {
 public:
-	CANIMAL(int,char);
-	void Move();
-	virtual void Tell();
-	void draw();
+	CANIMAL(int,int);
 };

@@ -4,16 +4,20 @@
 class CPEOPLE {
 private:
 	int mX, mY;
-	char mSymbol = 'Y';
-	bool mState;
+	char mSymbol;
+	bool mState; //is People dead
 public:
 	CPEOPLE();
+	int getX();
+	int getY();
+	void Draw();
 	void Up();
 	void Left();
 	void Right();
 	void Down();
-	bool isImpact(CVEHICLE*);
-	bool isImpact(CANIMAL*);
+	bool isImpact(COBJECT*);
 	bool isFinish();
 	bool isDead();
+	void updateWhenFinish();
+	void collide();
 };
