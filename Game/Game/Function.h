@@ -1,8 +1,14 @@
 #pragma once
+#ifndef FUNCTION_H
+#define FUNCTION_H
+#endif // !FUNCTION_H
+
 #include <iostream>
 #include <time.h>
+#include <Windows.h>
 using namespace std;
-int width = 70;
-int height = 15;
+const int width = 68;
+const int height = 20;
 void FixConsoleWindow();
 void GoToXY(int, int);
+bool checkForLine(int y);

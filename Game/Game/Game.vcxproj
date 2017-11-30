@@ -75,6 +75,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -82,7 +83,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -104,10 +109,12 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -116,15 +123,23 @@
     <ClInclude Include="CCAR.h" />
     <ClInclude Include="CDINASAUR.h" />
     <ClInclude Include="CGAME.h" />
+    <ClInclude Include="COBJECT.h" />
     <ClInclude Include="CPEOPLE.h" />
+    <ClInclude Include="CTRAFFICLIGHT.h" />
     <ClInclude Include="CTRUCK.h" />
     <ClInclude Include="CVEHICLE.h" />
     <ClInclude Include="Function.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CANIMAL.cpp" />
+    <ClCompile Include="CBIRD.cpp" />
+    <ClCompile Include="CCAR.cpp" />
+    <ClCompile Include="CDINASAUR.cpp" />
     <ClCompile Include="CGAME.cpp" />
+    <ClCompile Include="COBJECT.cpp" />
     <ClCompile Include="CPEOPLE.cpp" />
+    <ClCompile Include="CTRAFFICLIGHT.cpp" />
+    <ClCompile Include="CTRUCK.cpp" />
     <ClCompile Include="CVEHICLE.cpp" />
     <ClCompile Include="Function.cpp" />
     <ClCompile Include="Main.cpp" />
